@@ -3,6 +3,13 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+data/raw_data/
+data/data_gjy/
+data/data_khn/
+data/data_yye/
+data/data_lyh/
+data/data_jmj/
+
 # C extensions
 *.so
 
