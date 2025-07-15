@@ -1,7 +1,7 @@
 # sprint_ai03_Basic AI Project
 이 프로젝트는 ..
 
-프로젝트 구조
+##프로젝트 구조
 
 **data/**: 원시 데이터(raw)와 전처리 데이터(processed)를 분리하여 저장
 
