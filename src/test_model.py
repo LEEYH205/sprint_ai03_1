@@ -1,1 +1,2 @@
-print('LOL')
+print('test')
+print('coding')
