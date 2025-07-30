@@ -63,6 +63,16 @@ sprint_ai03_1/
 ### `notebooks/`
 - 데이터 전처리 / 모델링 주피터 노트북 (개인용)
 
+### `scripts/`
+- **`preprocess.py`**: raw_data → YOLO train/val 분할·포맷 생성
+- **`convert_yolo2coco.py`**: YOLO TXT → COCO JSON 변환
+- **`convert_subset.py`**: COCO JSON에서 subset YOLO TXT 추출
+- **`convert_csv2json.py`**: 예측 CSV → COCO JSON 변환
+- **`coco_eval.py`**: COCO 툴킷 기반 성능 평가
+- **`calibration_eval.py`**: vECE 계산·Reliability Diagram 시각화
+- **`collect_fn.py`**: False Negative 박스 시각화용 수집 도구
+- **`train_curve.py`**: results.csv 기반 학습 곡선 플롯
+  
 ### `src/`
 - **`evaluate.py`**: 모델 평가 관련 테스트 코드
 - **`train.py`**: 모델 학습 관련 테스트 코드
@@ -70,6 +80,7 @@ sprint_ai03_1/
 - **`inference.py`**: NMS/TTA 포함 추론 스크립트
 - **`visualization.py`**: 학습·예측 시각화 도구
 - **`check.py`**: validation 이미지 순회 시각화용 툴
+
 ### `utils/`
 - **`analyze_annotation_mismatch.py`**: 폴더명과 실제 하위 폴더 불일치 분석
 - **`analyze_drug_annotation_coverage.py`**: 약품코드별 어노테이션 커버리지 분석
