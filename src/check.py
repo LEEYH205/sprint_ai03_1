@@ -29,7 +29,7 @@ def show_image(index):
         cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
         cv2.putText(img, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
 
-    print(f"\n🎯 {file_name} / 탐지된 알약 수: {len(results.boxes)}")
+    print(f"\n {file_name} / 탐지된 알약 수: {len(results.boxes)}")
     resized = cv2.resize(img, (min(img.shape[1], 960), min(img.shape[0], 720)))  # 보기 편하게 리사이즈
     cv2.imshow("Prediction", resized)
 
