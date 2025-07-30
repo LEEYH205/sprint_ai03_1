@@ -17,12 +17,14 @@
 
 - **출처**: [Kaggle - AI03 Level1 Project](https://www.kaggle.com/competitions/ai03-level1-project/data)
 - **구성**:
-├── train/
-│ ├── images/
-│ └── annotations/ # 하위폴더별 약품코드 json 포함
-└── test/
-└── images/
+<pre> ```
+├── train_iamges/  
+│     ├── images/  # train 이미지
+│─── train_annotations/ # 하위폴더별 약품코드 json 포함
+├── test_images/
+│     ├── images/  # train 이미지
 
+```</pre>
 
 
 - **Annotation Format**: COCO JSON
@@ -66,13 +68,12 @@
 | 항목 | 설정값 |
 |------|--------|
 | 이미지 크기 | 640 |
-| Epochs | 100 |
+| Epochs | 20 ~ 150 |
 | Batch size | 16 |
-| Optimizer | Adam |
-| Learning Rate | 0.001 |
-| Early Stopping | 10 |
+| Optimizer | SDG / Adam |
+| Early Stopping | 5 ~ 10 |
 | Cosine LR | True |
-| Augmentation | 적용 |
+| Augmentation | 유무 |
 
 ### 성능 지표
 
@@ -109,7 +110,7 @@
 
 ---
 
-## 📎 향후 계획
+## 향후 계획
 
 - 라벨 누락 이미지 기반 **pseudo-labeling** 적용 실험
 - 앙상블 기법 적용 가능성 탐색
@@ -117,7 +118,7 @@
 
 ---
 
-## 🔗 참고 링크
+## 참고 링크
 
 - [Ultralytics YOLOv8 Docs](https://docs.ultralytics.com)
 - [COCO Format Guide](https://cocodataset.org/#format-data)
