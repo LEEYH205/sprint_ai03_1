@@ -2,10 +2,10 @@
 print_ai03_1/
 ├── data/
 │   ├── raw_data/
-│   │   ├── test_images/         – 원본 테스트 이미지 폴더
-│   │   ├── train_annotations/   – 원본 학습용 어노테이션 (XML/JSON)
-│   │   └── train_images/        – 원본 학습용 이미지
-│   └── processed/               – YOLO 형식으로 변환된 train/val 데이터
+│       ├── test_images/         – 원본 테스트 이미지 폴더
+│       ├── train_annotations/   – 원본 학습용 어노테이션 (XML/JSON)
+│       └── train_images/        – 원본 학습용 이미지
+├── processed/                   – YOLO 형식으로 변환된 train/val 데이터
 ├── models/
 │   └── model.py                 – 모델 아키텍처 정의 (예: YOLO)
 ├── runs/
@@ -29,4 +29,6 @@ print_ai03_1/
 │   ├── collect_fn.py            – False Negative 박스 시각화용 수집 도구
 │   └── train_curve.py           – results.csv 기반 학습 곡선 플롯
 └── data.yaml                    – 데이터셋 설정 및 하이퍼파라미터
+
+train.py 에서 processed 로 전처리 파일 옮겨짐,  data.yaml 생성 등 포함하고 있음.
 ```
