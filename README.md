@@ -1,4 +1,3 @@
-
 # sprint_ai03_Basic AI Project
 이 프로젝트는 ..
 
@@ -13,3 +12,4 @@
 **utils/**: 데이터 로딩 유틸리티
 
 **src/**: 모듈화된 코드
+
