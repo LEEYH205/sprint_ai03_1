@@ -44,6 +44,6 @@ for img_path in IMG_DIR.iterdir():
     out_path = OUT_LABEL_DIR / f"{img_path.stem}.txt"
     with open(out_path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + ("\n" if lines else ""))
-    print(f"✅ {out_path} 생성 ({len(lines)} boxes)")
+    print(f"{out_path} 생성 ({len(lines)} boxes)")
 
 print("🎉 YOLO TXT 변환 완료!")

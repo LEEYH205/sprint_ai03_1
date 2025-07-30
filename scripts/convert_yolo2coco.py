@@ -70,7 +70,7 @@ def yolo2coco(img_dir, label_dir, data_yaml, out_json):
 
     with open(out_json, 'w', encoding='utf-8') as f:
         json.dump(coco, f, ensure_ascii=False, indent=2)
-    print(f"✅ {out_json} 생성 완료!  images: {len(images)}, anns: {len(annotations)}")
+    print(f"{out_json} 생성 완료!  images: {len(images)}, anns: {len(annotations)}")
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser()

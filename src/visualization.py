@@ -24,7 +24,7 @@ def draw_boxes(image_path, csv_path, conf_thresh=0.25):
 
     out_path = "vis_" + os.path.basename(image_path)
     cv2.imwrite(out_path, img)
-    print(f"✅ 시각화 결과 저장 완료: {out_path}")
+    print(f"시각화 결과 저장 완료: {out_path}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser("Single image visualization")
