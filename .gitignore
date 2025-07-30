@@ -1,0 +1,31 @@
+# 1) 무시할 폴더/파일 직접 명시
+/data/
+/data/**
+/notebooks/
+/output/
+/processed/
+/runs/
+/utils/
+/*.csv
+/*.png
+/*.jpg
+/*.jpeg
+/*.pt
+/*.db
+/*.ipynb
+/*.txt
+/*.log
+
+# 2) 소스코드 폴더는 파일 확장자 .py만 허용
+/src/**
+!/src/**/*.py
+
+/scripts/**
+!/scripts/**/*.py
+
+/models/**
+!/models/**/*.py
+
+# 3) 캐시 파일 무시
+__pycache__/
+*.pyc
