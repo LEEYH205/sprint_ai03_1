@@ -68,9 +68,17 @@ sprint_ai03_1/
 - **`train.py`**: 모델 학습 관련 테스트 코드
 - **`utils.py`**: 유틸리티 함수 테스트 코드
 - **`inference.py`**: NMS/TTA 포함 추론 스크립트
-- ** `visualization.py`**: 학습·예측 시각화 도구
-- ** `check.py`**: validation 이미지 순회 시각화용 툴
-
+- **`visualization.py`**: 학습·예측 시각화 도구
+- **`check.py`**: validation 이미지 순회 시각화용 툴
+### `utils/`
+- **`analyze_annotation_mismatch.py`**: 폴더명과 실제 하위 폴더 불일치 분석
+- **`analyze_drug_annotation_coverage.py`**: 약품코드별 어노테이션 커버리지 분석
+- **`analyze_drug_bbox.py`**: 바운딩 박스 통계 및 시각화
+- **`bbox_gui_editor.py`**: 바운딩 박스 편집 GUI
+- ** `drug_code_viewer.py`**: 약품 코드별 이미지 뷰어
+- ** `data_augmentation.py`**: 이미지 회전을 통한 데이터 증강
+- ** `create_submission.py`**: YOLO 모델 예측 및 제출 파일 생성
+  
 ### Root Files
 - **`.gitignore`**: Git에서 제외할 파일/폴더 설정
 - **`README.md`**: 프로젝트 설명서
@@ -83,7 +91,7 @@ sprint_ai03_1/
 - PyPi : https://pypi.org/project/bbox-annotation-tools/
 
 ### 보고서 링크
-- ~~
+- https://drive.google.com/file/d/1FfGMFbhun41L-32i1dkdtHMiwBILUxTr
   
 ### 노션 링크
 - 팀 노션 : https://www.notion.so/Codeit-AI-3-_-1-_-23155af55ff6802898a1ed2a7052caf8
